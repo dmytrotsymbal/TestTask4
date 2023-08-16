@@ -1,11 +1,9 @@
-/* Сброс стилей для всех элементов */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Обнуление стилей для некоторых элементов */
 body,
 h1,
 h2,
@@ -17,7 +15,6 @@ li {
   padding: 0;
 }
 
-/* Установка базовых отступов */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -25,5 +22,3 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
-
-/* Дополнительные стили по вашему усмотрению */
