@@ -152,33 +152,46 @@
   }
 }
 .sliderSection {
+  width: 100%;
   min-height: 737px;
   background-color: #dcc1ab;
-  display: flex;
-  justify-content: center;
 }
-.sliderSection #carouselExampleFade {
-  width: 1440px;
+.sliderSection .custom-container {
+  width: 100%;
   min-height: 737px;
-  padding-left: 82px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sliderSection .custom-container #carouselExampleFade {
+  width: 100%;
+  min-height: 737px;
   position: relative;
 }
-.sliderSection #carouselExampleFade .slide1,
-.sliderSection #carouselExampleFade .slide2,
-.sliderSection #carouselExampleFade .slide3 {
+.sliderSection .custom-container #carouselExampleFade .slide1,
+.sliderSection .custom-container #carouselExampleFade .slide2,
+.sliderSection .custom-container #carouselExampleFade .slide3 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
-.sliderSection #carouselExampleFade .slide1 .rightSideContainer,
-.sliderSection #carouselExampleFade .slide2 .rightSideContainer,
-.sliderSection #carouselExampleFade .slide3 .rightSideContainer {
-  max-width: 599px;
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container {
+  max-width: 1262px;
+  min-height: 737px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.sliderSection #carouselExampleFade .slide1 .rightSideContainer h2,
-.sliderSection #carouselExampleFade .slide2 .rightSideContainer h2,
-.sliderSection #carouselExampleFade .slide3 .rightSideContainer h2 {
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer {
+  width: 599px;
+  padding-left: 10px;
+}
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer h2,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer h2,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer h2 {
   color: var(--black, #111);
   font-family: Montserrat;
   font-size: 60px;
@@ -188,9 +201,9 @@
   align-self: stretch;
   margin-top: 144.5px;
 }
-.sliderSection #carouselExampleFade .slide1 .rightSideContainer p,
-.sliderSection #carouselExampleFade .slide2 .rightSideContainer p,
-.sliderSection #carouselExampleFade .slide3 .rightSideContainer p {
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer p,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer p,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer p {
   width: 480px;
   color: var(--black, #111);
   font-family: Inter;
@@ -200,18 +213,18 @@
   line-height: 150%; /* 24px */
   margin-top: 44px;
 }
-.sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider,
-.sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider,
-.sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider {
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider {
   width: 493px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 72px;
 }
-.sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :first-child,
-.sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :first-child,
-.sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :first-child {
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child {
   color: #f5f0ec;
   border: 0;
   border-radius: 200px;
@@ -229,9 +242,9 @@
   font-weight: 400;
   line-height: 150%;
 }
-.sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :last-child,
-.sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :last-child,
-.sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :last-child {
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child {
   border-radius: 200px;
   border: 1px solid var(--green, #1b5b31);
   background-color: #dcc1ab;
@@ -248,35 +261,35 @@
   font-weight: 400;
   line-height: 150%;
 }
-.sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :last-child svg,
-.sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :last-child svg,
-.sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :last-child svg {
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg {
   border: 0;
   width: 16px;
   height: 16px;
   padding: 0;
 }
-.sliderSection #carouselExampleFade .slide1 .leftSideContainer img,
-.sliderSection #carouselExampleFade .slide2 .leftSideContainer img,
-.sliderSection #carouselExampleFade .slide3 .leftSideContainer img {
+.sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer img,
+.sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer img,
+.sliderSection .custom-container #carouselExampleFade .slide3 .leftSideContainer img {
   width: 688px;
   height: 737px;
 }
-.sliderSection #carouselExampleFade .buttonsBlock {
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock {
   width: 192px;
   height: 96px;
   position: absolute;
   bottom: 0px;
   right: 0px;
 }
-.sliderSection #carouselExampleFade .buttonsBlock button {
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock button {
   border: 0;
   background-color: white;
   height: 96px;
   width: 96px;
   opacity: 1;
 }
-.sliderSection #carouselExampleFade .buttonsBlock button svg {
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock button svg {
   width: 38px;
   height: 38px;
   color: black;
@@ -284,257 +297,306 @@
 
 @media (max-width: 1263px) {
   .sliderSection {
-    height: 1267px;
-    background-color: #dcc1ab;
-    display: flex;
-    justify-content: center;
-  }
-  .sliderSection #carouselExampleFade {
-    width: 1440px;
+    width: 100%;
     min-height: 737px;
-    padding-left: 30px;
-    padding-right: 30px;
+    background-color: #dcc1ab;
+  }
+  .sliderSection .custom-container {
+    width: 100%;
+  }
+  .sliderSection .custom-container #carouselExampleFade {
+    width: 100%;
+    min-height: 737px;
     position: relative;
   }
-  .sliderSection #carouselExampleFade .slide1,
-  .sliderSection #carouselExampleFade .slide2,
-  .sliderSection #carouselExampleFade .slide3 {
+  .sliderSection .custom-container #carouselExampleFade .slide1,
+  .sliderSection .custom-container #carouselExampleFade .slide2,
+  .sliderSection .custom-container #carouselExampleFade .slide3 {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer h2,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer h2,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer h2 {
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container {
+    width: 100%;
+    min-height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer {
+    width: 799px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer h2,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer h2,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer h2 {
     color: var(--black, #111);
     font-family: Montserrat;
-    font-size: 48px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 500;
-    line-height: 70px;
+    line-height: 70px; /* 116.667% */
     align-self: stretch;
-    margin-top: 44.5px;
+    margin-top: 15px;
     text-align: center;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer p,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer p,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer p {
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer p,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer p,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer p {
+    width: 480px;
+    margin-left: calc(50% - 240px);
     color: var(--black, #111);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    margin-top: 34px;
-    width: 360px;
+    margin-top: 44px;
     text-align: center;
-    margin-left: calc(50% - 180px);
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider {
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider {
     width: 493px;
     margin-left: calc(50% - 246.5px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 42px;
-    margin-bottom: 30px;
+    margin-top: 72px;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :first-child,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :first-child,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :first-child {
-    color: #f5f0ec;
-    border: 0;
-    border-radius: 200px;
-    background: var(--green, #1b5b31);
-    width: 208px;
-    height: 50px;
+  .sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .leftSideContainer {
     display: flex;
-    padding: 12px 24px 14px 24px;
-    align-items: center;
-    gap: 10px;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    justify-content: center;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :last-child,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :last-child,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :last-child {
-    border-radius: 200px;
-    border: 1px solid var(--green, #1b5b31);
-    background-color: #dcc1ab;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 22px 14px 22px;
-    align-items: center;
-    width: 249px;
-    height: 50px;
-    color: #1b5b31;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+  .sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer img,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer img,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .leftSideContainer img {
+    width: 688px;
+    height: 737px;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :last-child svg,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :last-child svg,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :last-child svg {
-    border: 0;
-    width: 16px;
-    height: 16px;
-    padding: 0;
-  }
-  .sliderSection #carouselExampleFade .slide1 .leftSideContainer img,
-  .sliderSection #carouselExampleFade .slide2 .leftSideContainer img,
-  .sliderSection #carouselExampleFade .slide3 .leftSideContainer img {
-    width: 550px;
-  }
-  .sliderSection #carouselExampleFade .buttonsBlock {
+  .sliderSection .custom-container #carouselExampleFade .buttonsBlock {
     width: 192px;
     height: 96px;
     position: absolute;
-    bottom: 20px;
-    left: calc(50% - 96px);
+    bottom: 0px;
+    right: calc(50% - 96px);
   }
-  .sliderSection #carouselExampleFade .buttonsBlock button {
+  .sliderSection .custom-container #carouselExampleFade .buttonsBlock button {
     border: 0;
     background-color: white;
     height: 96px;
     width: 96px;
     opacity: 1;
   }
-  .sliderSection #carouselExampleFade .buttonsBlock button svg {
+  .sliderSection .custom-container #carouselExampleFade .buttonsBlock button svg {
     width: 38px;
     height: 38px;
     color: black;
   }
 }
-@media (max-width: 619px) {
+@media (max-width: 799px) {
   .sliderSection {
     width: 100%;
-    height: 1167px;
+    min-height: 880px;
     background-color: #dcc1ab;
-    display: flex;
-    justify-content: center;
   }
-  .sliderSection #carouselExampleFade {
-    width: 1440px;
-    min-height: 737px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .sliderSection #carouselExampleFade .slide1,
-  .sliderSection #carouselExampleFade .slide2,
-  .sliderSection #carouselExampleFade .slide3 {
+  .sliderSection .custom-container {
     width: 100%;
-    height: 100%;
+  }
+  .sliderSection .custom-container #carouselExampleFade {
+    width: 100%;
+    min-height: 880px;
+    position: relative;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1,
+  .sliderSection .custom-container #carouselExampleFade .slide2,
+  .sliderSection .custom-container #carouselExampleFade .slide3 {
+    width: 100%;
+    min-height: 880px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer {
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container {
     width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer h2,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer h2,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer h2 {
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer {
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer h2,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer h2,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer h2 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--black, #111);
     font-family: Montserrat;
-    font-size: 48px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    line-height: 70px;
+    line-height: normal;
     align-self: stretch;
-    margin-top: 44.5px;
+    margin-top: 15px;
     text-align: center;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer p,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer p,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer p {
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer p,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer p,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--black, #111);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    margin-top: 34px;
-    width: 360px;
+    margin-top: 44px;
     text-align: center;
-    margin-left: calc(50% - 180px);
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider {
-    width: 360px;
-    margin-left: calc(50% - 180px);
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 42px;
-    margin-bottom: 30px;
+    margin-top: 72px;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :first-child,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :first-child,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :first-child {
-    color: #f5f0ec;
-    border: 0;
-    border-radius: 200px;
-    background: var(--green, #1b5b31);
-    width: 340px;
-    height: 50px;
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child {
+    margin-bottom: 15px;
+    width: 85%;
+    font-size: 19px;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child {
+    width: 85%;
     display: flex;
     justify-content: center;
+    font-size: 19px;
     margin-bottom: 30px;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :last-child,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :last-child,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :last-child {
-    border-radius: 200px;
-    border: 1px solid var(--green, #1b5b31);
-    background-color: #dcc1ab;
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg {
+    padding: 0px;
+    margin: 0px;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .leftSideContainer {
+    width: 100%;
+    height: 650px;
     display: flex;
-    justify-content: space-around;
-    padding: 12px 22px 14px 22px;
-    align-items: center;
-    width: 340px;
-    height: 50px;
-    color: #1b5b31;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    justify-content: center;
   }
-  .sliderSection #carouselExampleFade .slide1 .rightSideContainer .buttonsBlockInSlider :last-child svg,
-  .sliderSection #carouselExampleFade .slide2 .rightSideContainer .buttonsBlockInSlider :last-child svg,
-  .sliderSection #carouselExampleFade .slide3 .rightSideContainer .buttonsBlockInSlider :last-child svg {
-    margin-top: 28px;
+  .sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer img,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer img,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .leftSideContainer img {
+    width: 95%;
+    height: 650px;
+  }
+  .sliderSection .custom-container #carouselExampleFade .buttonsBlock {
+    width: 192px;
+    height: 96px;
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 96px);
+  }
+  .sliderSection .custom-container #carouselExampleFade .buttonsBlock button {
     border: 0;
-    width: 26px;
-    height: 26px;
-    padding: 0;
+    background-color: white;
+    height: 96px;
+    width: 96px;
+    opacity: 1;
   }
-  .sliderSection #carouselExampleFade .slide1 .leftSideContainer,
-  .sliderSection #carouselExampleFade .slide2 .leftSideContainer,
-  .sliderSection #carouselExampleFade .slide3 .leftSideContainer {
+  .sliderSection .custom-container #carouselExampleFade .buttonsBlock button svg {
+    width: 38px;
+    height: 38px;
+    color: black;
+  }
+}
+@media (max-width: 454px) {
+  .sliderSection {
+    width: 100%;
+    min-height: 880px;
+    background-color: #dcc1ab;
+  }
+  .sliderSection .custom-container {
     width: 100%;
   }
-  .sliderSection #carouselExampleFade .slide1 .leftSideContainer img,
-  .sliderSection #carouselExampleFade .slide2 .leftSideContainer img,
-  .sliderSection #carouselExampleFade .slide3 .leftSideContainer img {
-    width: 370px;
-    height: 440px;
-    margin-left: calc(50% - 185px);
+  .sliderSection .custom-container #carouselExampleFade {
+    width: 100%;
+    min-height: 880px;
+    position: relative;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1,
+  .sliderSection .custom-container #carouselExampleFade .slide2,
+  .sliderSection .custom-container #carouselExampleFade .slide3 {
+    width: 100%;
+    min-height: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container {
+    width: 100%;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer {
+    width: 100%;
+    height: 530px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .leftSideContainer {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+  }
+  .sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer img,
+  .sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer img,
+  .sliderSection .custom-container #carouselExampleFade .slide3 .leftSideContainer img {
+    width: 95%;
+    height: 450px;
   }
 }
 .oferta {
@@ -1222,42 +1284,33 @@
   }
   .Ofirmie .custom-container .textBlock p {
     color: var(--grey, #f5f0ec);
-    max-width: 390px;
-    margin-left: calc(50% - 195px);
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 80px;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
     letter-spacing: -0.16px;
-    margin-bottom: 72px;
+    margin-bottom: 42px;
   }
   .Ofirmie .custom-container .textBlock button {
-    width: 196px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 19px;
     height: 50px;
-    background: transparent;
-    margin-left: calc(50% - 98px);
-    display: flex;
-    padding: 12px 22px 14px 22px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 200px;
-    border: 1px solid var(--grey, #f5f0ec);
-    color: var(--grey, #f5f0ec);
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
+    justify-content: center;
   }
   .Ofirmie .custom-container .OfirmiePhoto {
     position: absolute;
-    width: 370px;
-    top: 15px;
-    left: calc(50% - 185px);
+    width: 95%;
     height: 520px;
+    top: 15px;
+    left: auto;
+    right: inherit;
   }
 }
 .Instagram {
@@ -1358,9 +1411,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    height: 50%;
   }
   .Instagram .custom-container .content .flexItem p {
-    text-align: center;
+    text-align: start;
+  }
+  .Instagram .custom-container .content .flexItem button {
+    display: flex;
+    align-self: flex-start;
   }
 }
 @media (max-width: 475px) {
@@ -1398,9 +1456,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 30%;
   }
   .Instagram .custom-container .content .flexItem p {
     text-align: center;
+  }
+  .Instagram .custom-container .content .flexItem button {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 19px;
+    justify-content: center;
+    border: 0;
   }
 }
 .footer {
@@ -1599,22 +1667,9 @@
     letter-spacing: -0.16px;
   }
   .footer .custom-container .footerContent .upper .rightUpper button {
-    width: 208px;
+    width: 308px;
     height: 50px;
-    display: flex;
-    padding: 12px 24px 14px 24px;
-    align-items: center;
-    border: 0;
-    gap: 10px;
-    border-radius: 200px;
-    background: var(--green, #1b5b31);
-    color: var(--grey, #f5f0ec);
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    justify-content: center;
   }
   .footer .custom-container .footerContent .middle {
     width: 90%;
