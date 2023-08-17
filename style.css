@@ -1399,6 +1399,47 @@
     right: inherit;
   }
 }
+.Realizac {
+  width: 100%;
+  background-color: #dcc1ab;
+  min-height: 1824px;
+}
+.Realizac .custom-container {
+  max-width: 1262px;
+  min-height: 1824px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Realizac .custom-container .textBlock {
+  padding-top: 120px;
+}
+.Realizac .custom-container .textBlock h6 {
+  color: var(--green, #1b5b31);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  letter-spacing: -0.12px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.Realizac .custom-container .textBlock article {
+  color: var(--black, #111);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 55.2px */
+  letter-spacing: -1.44px;
+  margin-bottom: 96px;
+}
+.Realizac .custom-container .textBlock #fetchImages {
+  background-color: #fff;
+  width: 100%;
+  min-height: 1519px;
+}
+
 .Instagram {
   width: 100%;
   background-color: #f5f0ec;
