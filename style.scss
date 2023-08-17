@@ -32,10 +32,16 @@
 
         .dropdown {
           .dropdown-menu {
+            padding: 5px 5px;
             border-radius: 0%;
 
             .dropdown-item {
               text-align: start;
+              padding-left: 0px;
+
+              &:hover {
+                background-color: #fff;
+              }
             }
           }
         }
@@ -48,6 +54,22 @@
           font-style: normal;
           font-weight: 400;
           text-decoration: none;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #111;
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover::before {
+            width: 100%;
+          }
         }
       }
 
@@ -96,6 +118,74 @@
               font-style: normal;
               font-weight: 400;
               text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .mobileMenu {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background-color: #fff;
+      overflow-y: auto;
+      transition: right 0.3s ease;
+      z-index: 1000;
+
+      .mobileMenuUpper {
+        display: flex;
+        flex-direction: row;
+        height: 72px;
+        background-color: #f5f0ec;
+        padding-right: 12px;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+          width: 40px;
+          height: 40px;
+          border: 0;
+          background-color: #f5f0ec;
+        }
+      }
+
+      &.active {
+        right: 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 12px;
+        margin-top: 10px;
+
+        li {
+          a {
+            padding: 10px 0px;
+            display: block;
+            color: #111;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: none;
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: #111;
+              transition: width 0.3s ease-in-out;
+            }
+
+            &:hover::before {
+              width: 100%;
             }
           }
         }
@@ -161,8 +251,8 @@
 
     .adaptiveBtn {
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       border: 0;
       background-color: transparent;
     }
