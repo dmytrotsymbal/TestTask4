@@ -43,6 +43,31 @@
                 background-color: #fff;
               }
             }
+
+            #firstLinkInDropdawn:hover {
+              color: #111;
+              font-family: Inter;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              text-decoration: none;
+              position: relative;
+
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #111;
+                transition: width 0.3s ease-in-out;
+              }
+
+              &:hover::before {
+                width: 100%;
+              }
+            }
           }
         }
 
@@ -62,7 +87,7 @@
             bottom: 0;
             left: 0;
             width: 0;
-            height: 2px;
+            height: 1.5px;
             background-color: #111;
             transition: width 0.3s ease-in-out;
           }
@@ -172,21 +197,6 @@
             font-weight: 400;
             text-decoration: none;
             position: relative;
-
-            &::before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 0;
-              height: 2px;
-              background-color: #111;
-              transition: width 0.3s ease-in-out;
-            }
-
-            &:hover::before {
-              width: 100%;
-            }
           }
         }
       }

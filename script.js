@@ -20,3 +20,5 @@ adaptiveBtn.addEventListener("click", () => {
 closeAdaptiveMenu.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
+
+//-----------------------------------------------------------------
