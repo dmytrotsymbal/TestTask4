@@ -1435,9 +1435,20 @@
   margin-bottom: 96px;
 }
 .Realizac .custom-container .textBlock #fetchImages {
-  background-color: #fff;
   width: 100%;
   min-height: 1519px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.Realizac .custom-container .textBlock #fetchImages .photo {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 10px 0px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.Realizac .custom-container .textBlock #fetchImages .photo:hover {
+  transform: translateY(-7px);
 }
 
 .Instagram {

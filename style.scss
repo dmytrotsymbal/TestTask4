@@ -1551,9 +1551,23 @@
       }
 
       #fetchImages {
-        background-color: #fff;
+        // background-color: #95df0a;
         width: 100%;
         min-height: 1519px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .photo {
+          flex: 0 0 calc(33.33% - 10px);
+          margin: 10px 0px;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+            transform: translateY(-7px);
+          }
+        }
       }
     }
   }
