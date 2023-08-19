@@ -12,6 +12,7 @@
 const adaptiveBtn = document.getElementById("adaptiveBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const closeAdaptiveMenu = document.getElementById("closeAdaptiveMenu");
+const mobileMenuLinks = document.getElementsByClassName("mobileMenuLink");
 
 adaptiveBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
@@ -20,5 +21,11 @@ adaptiveBtn.addEventListener("click", () => {
 closeAdaptiveMenu.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
+
+for (const link of mobileMenuLinks) {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+}
 
 //-----------------------------------------------------------------

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   width: 100%;
   height: 72px;
@@ -205,7 +206,7 @@
     padding-right: 12px;
   }
   .header nav img {
-    height: 30px;
+    height: 20px;
   }
   .header nav .rightSide {
     display: none;
@@ -314,7 +315,7 @@
   color: #f5f0ec;
   border: 0;
   border-radius: 200px;
-  background: var(--green, #1b5b31);
+  background: #1b5b31;
   width: 208px;
   height: 50px;
   display: flex;
@@ -327,12 +328,20 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child:hover,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child:hover,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :first-child:hover {
+  background-color: #1a7436;
+  transform: translateY(-2px);
 }
 .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child,
 .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child,
 .sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child {
   border-radius: 200px;
-  border: 1px solid var(--green, #1b5b31);
+  border: 1px solid #1b5b31;
   background-color: #dcc1ab;
   display: flex;
   justify-content: space-between;
@@ -346,6 +355,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg,
 .sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child svg,
@@ -354,6 +365,17 @@
   width: 16px;
   height: 16px;
   padding: 0;
+}
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child:hover,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child:hover,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child:hover {
+  background-color: #c3ab96;
+  transform: translateY(-2px);
+}
+.sliderSection .custom-container #carouselExampleFade .slide1 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child:hover svg,
+.sliderSection .custom-container #carouselExampleFade .slide2 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child:hover svg,
+.sliderSection .custom-container #carouselExampleFade .slide3 .slide-container .rightSideContainer .buttonsBlockInSlider :last-child:hover svg {
+  background-color: #c3ab96;
 }
 .sliderSection .custom-container #carouselExampleFade .slide1 .leftSideContainer img,
 .sliderSection .custom-container #carouselExampleFade .slide2 .leftSideContainer img,
@@ -364,6 +386,8 @@
 .sliderSection .custom-container #carouselExampleFade .buttonsBlock {
   width: 192px;
   height: 96px;
+  display: flex;
+  flex-direction: row;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -379,6 +403,54 @@
   width: 38px;
   height: 38px;
   color: black;
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-next {
+  border: 0;
+  background-color: white;
+  height: 96px;
+  width: 96px;
+  position: relative; /* Добавляем позиционирование для псевдоэлемента */
+  overflow: hidden; /* Обрезаем лишние части псевдоэлемента */
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-next svg {
+  z-index: 123123;
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-next::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(187, 186, 186), rgb(227, 226, 226));
+  transition: left 0.3s ease;
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-next:hover::before {
+  left: 0;
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-prev {
+  border: 0;
+  background-color: white;
+  height: 96px;
+  width: 96px;
+  position: relative;
+  overflow: hidden;
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-prev svg {
+  z-index: 123123;
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-prev::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgb(187, 186, 186), rgb(227, 226, 226));
+  transition: right 0.3s ease;
+}
+.sliderSection .custom-container #carouselExampleFade .buttonsBlock .carousel-control-prev:hover::before {
+  right: 0;
 }
 
 @media (max-width: 1263px) {
@@ -754,6 +826,7 @@
   border-radius: 28px;
   border: 0;
   background: var(--white, #fff);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .oferta .custom-container .cardsBlock .card .card-body {
   max-width: 298px;
@@ -819,6 +892,14 @@
   font-weight: 400;
   line-height: 150%; /* 24px */
   border-bottom: 1px solid var(--green, #1b5b31);
+}
+.oferta .custom-container .cardsBlock .card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+.oferta .custom-container .cardsBlock .card:hover .card-link {
+  color: #111;
+  border-bottom: 2px solid #111;
 }
 
 @media (max-width: 1400px) {
@@ -1083,6 +1164,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.Ofirmie .custom-container .textBlock button:hover {
+  background-color: #1a7436;
+  transform: translateY(-2px);
 }
 .Ofirmie .custom-container .OfirmiePhoto {
   position: absolute;
@@ -1519,6 +1606,7 @@
   z-index: 2;
 }
 .Realizac .custom-container .textBlock #fetchImages .photo:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transform: translateY(-7px);
   position: relative;
   z-index: 5;
@@ -1559,6 +1647,12 @@
   gap: 8px;
   border-radius: 200px;
   border: 1px solid var(--black, #111);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.Realizac .custom-container .textBlock .loadMoreZone #loadMore:hover {
+  background-color: #c3ab96;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 1440px) {
@@ -1798,6 +1892,12 @@
   gap: 10px;
   border-radius: 200px;
   background: var(--grey, #f5f0ec);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.Instagram .custom-container .content .flexItem button:hover {
+  background-color: #d7d3cf;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 975px) {
@@ -1955,6 +2055,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.footer .custom-container .footerContent .upper .rightUpper button:hover {
+  background-color: #1a7436;
+  transform: translateY(-2px);
 }
 .footer .custom-container .footerContent .middle {
   width: 100%;
@@ -1991,6 +2097,20 @@
   font-weight: 400;
   line-height: 150%; /* 21px */
   letter-spacing: -0.14px;
+  position: relative;
+}
+.footer .custom-container .footerContent .bottom ul a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #f5f0ec;
+  transition: width 0.3s ease-in-out;
+}
+.footer .custom-container .footerContent .bottom ul a:hover::before {
+  width: 100%;
 }
 .footer .custom-container .footerContent .bottom .rigthBottom {
   color: white;
