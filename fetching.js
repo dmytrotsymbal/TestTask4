@@ -3,7 +3,7 @@ const popup = document.getElementById("popup");
 const popupImage = document.getElementById("popupImage");
 const closePopup = document.getElementById("closePopup");
 
-let currentCount = 9;
+let currentCount = 10;
 async function fetchImages() {
   const response = await fetch(
     `https://api.unsplash.com/photos/random?client_id=s2iDMNtNY-yGTP-Q8T1X3dNDY8Dw3vzuBE6T1ia07hg&count=${currentCount}`
@@ -21,8 +21,8 @@ function createPhotoElement(photo) {
   img.addEventListener("load", () => {
     new Masonry(fetchImagesContainer, {
       itemSelector: ".photo",
-      columnWidth: fetchImagesContainer.offsetWidth * 0.32,
-      gutter: 25,
+      columnWidth: ".photo",
+      gutter: 0,
     });
   });
 

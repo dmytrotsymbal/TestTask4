@@ -723,6 +723,14 @@
   letter-spacing: -1.44px;
   margin-bottom: 32px;
 }
+.oferta .custom-container .textBlock article span {
+  color: var(--black, #111);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 115%;
+}
 .oferta .custom-container .textBlock p {
   color: var(--black, #111);
   max-width: 702px;
@@ -993,7 +1001,7 @@
     margin-bottom: 40px;
   }
   .oferta .custom-container .cardsBlock .card .card-text {
-    min-width: 298px;
+    max-width: 298px;
   }
 }
 .Ofirmie {
@@ -1031,12 +1039,21 @@
 }
 .Ofirmie .custom-container .textBlock article {
   color: var(--grey, #f5f0ec);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 55.2px */
+  letter-spacing: -1.44px;
+  margin-bottom: 40px;
+}
+.Ofirmie .custom-container .textBlock article span {
+  color: var(--grey, #f5f0ec);
   font-family: Inter;
   font-size: 48px;
   font-style: italic;
   font-weight: 500;
   line-height: 115%;
-  margin-bottom: 40px;
 }
 .Ofirmie .custom-container .textBlock p {
   color: var(--grey, #f5f0ec);
@@ -1111,12 +1128,21 @@
   }
   .Ofirmie .custom-container .textBlock article {
     color: var(--grey, #f5f0ec);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 55.2px */
+    letter-spacing: -1.44px;
+    margin-bottom: 40px;
+  }
+  .Ofirmie .custom-container .textBlock article span {
+    color: var(--grey, #f5f0ec);
     font-family: Inter;
     font-size: 48px;
     font-style: italic;
     font-weight: 500;
     line-height: 115%;
-    margin-bottom: 40px;
   }
   .Ofirmie .custom-container .textBlock p {
     color: var(--grey, #f5f0ec);
@@ -1195,13 +1221,22 @@
   }
   .Ofirmie .custom-container .textBlock article {
     color: var(--grey, #f5f0ec);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 55.2px */
+    letter-spacing: -1.44px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .Ofirmie .custom-container .textBlock article span {
+    color: var(--grey, #f5f0ec);
     font-family: Inter;
     font-size: 48px;
     font-style: italic;
     font-weight: 500;
     line-height: 115%;
-    margin-bottom: 40px;
-    text-align: center;
   }
   .Ofirmie .custom-container .textBlock p {
     color: var(--grey, #f5f0ec);
@@ -1280,12 +1315,22 @@
   }
   .Ofirmie .custom-container .textBlock article {
     color: var(--grey, #f5f0ec);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 55.2px */
+    letter-spacing: -1.44px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .Ofirmie .custom-container .textBlock article span {
+    color: var(--grey, #f5f0ec);
     font-family: Inter;
     font-size: 48px;
     font-style: italic;
     font-weight: 500;
     line-height: 115%;
-    margin-bottom: 40px;
   }
   .Ofirmie .custom-container .textBlock p {
     color: var(--grey, #f5f0ec);
@@ -1361,12 +1406,22 @@
   }
   .Ofirmie .custom-container .textBlock article {
     color: var(--grey, #f5f0ec);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 55.2px */
+    letter-spacing: -1.44px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .Ofirmie .custom-container .textBlock article span {
+    color: var(--grey, #f5f0ec);
     font-family: Inter;
     font-size: 48px;
     font-style: italic;
     font-weight: 500;
     line-height: 115%;
-    margin-bottom: 40px;
   }
   .Ofirmie .custom-container .textBlock p {
     color: var(--grey, #f5f0ec);
@@ -1405,7 +1460,7 @@
   min-height: 1824px;
 }
 .Realizac .custom-container {
-  max-width: 1262px;
+  max-width: 1440px;
   min-height: 1824px;
   margin-left: auto;
   margin-right: auto;
@@ -1414,7 +1469,12 @@
   padding-top: 120px;
   position: relative;
 }
-.Realizac .custom-container .textBlock h6 {
+.Realizac .custom-container .textBlock .textBlockContainer {
+  max-width: 1262px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Realizac .custom-container .textBlock .textBlockContainer h6 {
   color: var(--green, #1b5b31);
   font-family: Inter;
   font-size: 12px;
@@ -1425,7 +1485,7 @@
   margin: 0;
   margin-bottom: 16px;
 }
-.Realizac .custom-container .textBlock article {
+.Realizac .custom-container .textBlock .textBlockContainer article {
   color: var(--black, #111);
   font-family: Montserrat;
   font-size: 48px;
@@ -1435,16 +1495,24 @@
   letter-spacing: -1.44px;
   margin-bottom: 96px;
 }
+.Realizac .custom-container .textBlock .textBlockContainer article span {
+  color: var(--black, #111);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 115%;
+}
 .Realizac .custom-container .textBlock #fetchImages {
-  width: 100%;
+  max-width: 1440px;
   min-height: 1519px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 .Realizac .custom-container .textBlock #fetchImages .photo {
-  flex: 0 0 calc(33.33% - 10px);
-  margin: 10px 0px;
+  width: 451px;
+  margin: 14px;
   transition: transform 0.3s ease;
   cursor: pointer;
   position: relative;
@@ -1476,6 +1544,8 @@
   z-index: 6;
 }
 .Realizac .custom-container .textBlock .loadMoreZone #loadMore {
+  text-align: center;
+  font-family: Inter;
   position: absolute;
   background-color: transparent;
   bottom: 95px;
@@ -1491,6 +1561,170 @@
   border: 1px solid var(--black, #111);
 }
 
+@media (max-width: 1440px) {
+  .Realizac {
+    width: 100%;
+  }
+  .Realizac .custom-container {
+    width: 100%;
+  }
+  .Realizac .custom-container .textBlock {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .Realizac .custom-container .textBlock #fetchImages {
+    width: 100%;
+    min-height: 1519px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .Realizac .custom-container .textBlock #fetchImages .photo {
+    width: 40%;
+    display: flex;
+    margin-left: 6%;
+    margin-bottom: 2%;
+  }
+  .Realizac .custom-container .textBlock .loadMoreZone {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+    z-index: 6;
+  }
+  .Realizac .custom-container .textBlock .loadMoreZone #loadMore {
+    position: absolute;
+    background-color: transparent;
+    bottom: 95px;
+    left: calc(50% - 111.5px);
+    z-index: 1000;
+    width: 223px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 12px 22px 14px 22px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 200px;
+    border: 1px solid var(--black, #111);
+    font-size: 19px;
+  }
+  .Realizac .custom-container .textBlock .loadMoreZone #loadMore svg {
+    width: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .Realizac {
+    width: 100%;
+  }
+  .Realizac .custom-container {
+    width: 100%;
+  }
+  .Realizac .custom-container .textBlock {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .Realizac .custom-container .textBlock .textBlockContainer {
+    max-width: 1262px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Realizac .custom-container .textBlock .textBlockContainer h6 {
+    color: var(--green, #1b5b31);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: -0.12px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .Realizac .custom-container .textBlock .textBlockContainer article {
+    color: var(--black, #111);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 55.2px */
+    letter-spacing: -1.44px;
+    margin-bottom: 46px;
+  }
+  .Realizac .custom-container .textBlock .textBlockContainer article span {
+    color: var(--black, #111);
+    font-family: Inter;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 115%;
+  }
+  .Realizac .custom-container .textBlock #fetchImages {
+    width: 100%;
+    min-height: 1519px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .Realizac .custom-container .textBlock #fetchImages .photo {
+    width: 70%;
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .Realizac {
+    width: 100%;
+  }
+  .Realizac .custom-container {
+    width: 100%;
+  }
+  .Realizac .custom-container .textBlock {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .Realizac .custom-container .textBlock #fetchImages {
+    width: 100%;
+    min-height: 1519px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .Realizac .custom-container .textBlock #fetchImages .photo {
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 2%;
+  }
+  .Realizac .custom-container .textBlock .loadMoreZone {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+    z-index: 6;
+  }
+  .Realizac .custom-container .textBlock .loadMoreZone #loadMore {
+    position: absolute;
+    background-color: transparent;
+    width: 85%;
+    left: 7.5%;
+    bottom: 95px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 12px 22px 14px 22px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 200px;
+    border: 1px solid var(--black, #111);
+    font-size: 19px;
+  }
+  .Realizac .custom-container .textBlock .loadMoreZone #loadMore svg {
+    width: 20px;
+  }
+}
 .Instagram {
   width: 100%;
   background-color: #f5f0ec;
@@ -1527,6 +1761,15 @@
   height: 96px;
   margin-bottom: 0px;
 }
+.Instagram .custom-container .content h2 span {
+  color: var(--grey, #f5f0ec);
+  font-family: Inter;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1px;
+}
 .Instagram .custom-container .content .flexItem {
   display: flex;
   flex-direction: column;
@@ -1545,6 +1788,7 @@
   letter-spacing: -0.16px;
 }
 .Instagram .custom-container .content .flexItem button {
+  font-family: Inter;
   width: 124px;
   border: 0;
   height: 46px;
@@ -1582,6 +1826,9 @@
     background: #1b5b31;
   }
   .Instagram .custom-container .content h2 {
+    font-size: 30px;
+  }
+  .Instagram .custom-container .content h2 span {
     font-size: 30px;
   }
   .Instagram .custom-container .content .flexItem {
@@ -1845,7 +2092,8 @@
     letter-spacing: -0.16px;
   }
   .footer .custom-container .footerContent .upper .rightUpper button {
-    width: 308px;
+    width: 85%;
+    font-size: 19px;
     height: 50px;
     justify-content: center;
   }
@@ -1982,5 +2230,5 @@
 }
 .popup .popup-content .popup-container .popup-image {
   max-width: 100%;
-  height: 500px;
+  max-height: 500px;
 }/*# sourceMappingURL=style.css.map */
