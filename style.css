@@ -99,7 +99,7 @@
 .header nav .rightSide .search details[open] .input-container {
   display: block;
   height: 24px;
-  width: 200px;
+  width: 190px;
   margin-top: -24px;
   margin-left: 35px;
 }
@@ -112,6 +112,7 @@
   margin-left: 10px;
 }
 .header nav .rightSide .search .input-container input {
+  width: 140px;
   border: 0;
   border-bottom: 1px solid #111;
 }
@@ -136,6 +137,18 @@
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
+}
+.header nav .rightSide .search .input-container button {
+  border: 0;
+  background: #f5f0ec;
+  font-family: Inter;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+  border-radius: 50px;
+}
+.header nav .rightSide .search .input-container button:hover {
+  background-color: #d7d3cf;
 }
 .header nav .mobileMenu {
   position: fixed;
@@ -165,6 +178,47 @@
 }
 .header nav .mobileMenu.active {
   right: 0;
+}
+.header nav .mobileMenu .mobileMenuSearch {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header nav .mobileMenu .mobileMenuSearch input {
+  border: 0;
+  border-bottom: 1px solid #111;
+}
+.header nav .mobileMenu .mobileMenuSearch input:focus {
+  outline: none;
+  border-bottom: 1px solid #111;
+}
+.header nav .mobileMenu .mobileMenuSearch input::-moz-placeholder {
+  color: #111;
+  text-align: start;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+.header nav .mobileMenu .mobileMenuSearch input::placeholder {
+  color: #111;
+  text-align: start;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+.header nav .mobileMenu .mobileMenuSearch button {
+  border: 0;
+  background: #f5f0ec;
+  font-family: Inter;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+  border-radius: 50px;
 }
 .header nav .mobileMenu ul {
   list-style: none;

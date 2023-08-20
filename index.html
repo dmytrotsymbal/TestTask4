@@ -102,7 +102,7 @@
               </summary>
 
               <div class="input-container">
-                <input type="text" placeholder="Szukaj" />
+                <input type="text" placeholder="Szukaj" /> <button>Go!</button>
               </div>
             </details>
           </div>
@@ -134,6 +134,10 @@
               class="btn-close"
               aria-label="Close"
             ></button>
+          </div>
+
+          <div class="mobileMenuSearch">
+            <input type="text" placeholder="Szukaj" /> <button>Go!</button>
           </div>
 
           <ul>
@@ -482,17 +486,20 @@
       </section>
 
       <!-- O firmie -->
-      <section class="Ofirmie" id="ofirmie">
+      <section
+        class="Ofirmie"
+        id="ofirmie"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         <div class="custom-container">
           <img
             class="OfirmiePhoto"
             src="/public/images/OfirmiePhoto.png"
             alt="OfirmiePhoto"
-            data-aos="fade-down"
-            data-aos-duration="1000"
           />
 
-          <div class="textBlock" data-aos="fade-up" data-aos-duration="1000">
+          <div class="textBlock">
             <h6>O firmie</h6>
             <article>
               Tworzymy <br />
@@ -508,7 +515,7 @@
               małoobsługowe, dostosowane do współczesnego trybu życia.
             </p>
 
-            <button>
+            <button data-aos="flip-left" data-aos-duration="1000">
               Poznaj nas bliżej
               <span
                 ><svg
@@ -538,7 +545,12 @@
               <article>Nasze <span>projekty</span></article>
             </div>
 
-            <div id="fetchImages" class="masonry"></div>
+            <div
+              id="fetchImages"
+              class="masonry"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            ></div>
 
             <div class="gradient"></div>
 
