@@ -1461,36 +1461,38 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        max-width: 488px;
+        width: 488px;
         height: 520px;
       }
     }
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1024px) {
   .Ofirmie {
     width: 100%;
     background-color: #1b5b31;
-    height: 1120px;
+    height: 520px;
     position: relative;
 
     .custom-container {
       max-width: 1262px;
-      height: 1120px;
+      height: 520px;
       margin-left: auto;
       margin-right: auto;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: flex-end;
 
       .textBlock {
+        width: 50%;
         padding: 0px;
         margin: 0px;
-        padding-top: 135px;
-        padding-left: 10px;
+        padding-top: 0px;
+        padding-left: 100px;
         padding-right: 10px;
+        text-align: left;
 
         margin: 0;
         h6 {
@@ -1504,9 +1506,205 @@
           letter-spacing: -0.12px;
           margin: 0;
           margin-bottom: 16px;
-          text-align: center;
         }
 
+        article {
+          color: var(--grey, #f5f0ec);
+          font-family: Montserrat;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 115%; /* 55.2px */
+          letter-spacing: -1.44px;
+          margin-bottom: 40px;
+
+          span {
+            color: var(--grey, #f5f0ec);
+            font-family: Inter;
+            font-size: 48px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 115%;
+          }
+        }
+
+        p {
+          color: var(--grey, #f5f0ec);
+          max-width: 500px;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+          letter-spacing: -0.16px;
+          margin-bottom: 72px;
+        }
+
+        button {
+          width: 196px;
+          height: 50px;
+          background: transparent;
+          display: flex;
+          padding: 12px 22px 14px 22px;
+          gap: 8px;
+          border-radius: 200px;
+          border: 1px solid var(--grey, #f5f0ec);
+          color: var(--grey, #f5f0ec);
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+
+      .OfirmiePhoto {
+        position: absolute;
+        width: 488px;
+        left: 0;
+        max-height: 520px;
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .Ofirmie {
+    width: 100%;
+    background-color: #1b5b31;
+    height: 520px;
+    position: relative;
+
+    .custom-container {
+      max-width: 1262px;
+      height: 520px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      .textBlock {
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 0px;
+        padding-left: 100px;
+        padding-right: 10px;
+        text-align: left;
+
+        margin: 0;
+        h6 {
+          padding-top: 40px;
+          color: var(--grey, #f5f0ec);
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 18px */
+          letter-spacing: -0.12px;
+          margin: 0;
+          margin-bottom: 16px;
+        }
+
+        article {
+          color: var(--grey, #f5f0ec);
+          font-family: Montserrat;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 115%; /* 55.2px */
+          letter-spacing: -1.44px;
+          margin-bottom: 40px;
+
+          span {
+            color: var(--grey, #f5f0ec);
+            font-family: Inter;
+            font-size: 48px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 115%;
+          }
+        }
+
+        p {
+          color: var(--grey, #f5f0ec);
+          max-width: 500px;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+          letter-spacing: -0.16px;
+          margin-bottom: 32px;
+        }
+
+        button {
+          width: 196px;
+          height: 50px;
+          background: transparent;
+          display: flex;
+          padding: 12px 22px 14px 22px;
+          gap: 8px;
+          border-radius: 200px;
+          border: 1px solid var(--grey, #f5f0ec);
+          color: var(--grey, #f5f0ec);
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+
+      .OfirmiePhoto {
+        position: absolute;
+        width: 388px;
+        left: 0;
+        max-height: 520px;
+      }
+    }
+  }
+}
+
+@media (max-width: 738px) {
+  .Ofirmie {
+    width: 100%;
+    background-color: #1b5b31;
+    min-height: 1120px;
+    position: relative;
+
+    .custom-container {
+      height: 1120px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
+
+      .textBlock {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 135px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        h6 {
+          color: var(--grey, #f5f0ec);
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 18px */
+          letter-spacing: -0.12px;
+          margin: 0;
+          margin-bottom: 16px;
+          text-align: center;
+        }
         article {
           color: var(--grey, #f5f0ec);
           font-family: Montserrat;
@@ -1531,7 +1729,8 @@
         p {
           color: var(--grey, #f5f0ec);
           max-width: 500px;
-          margin-left: calc(50% - 250px);
+          margin-left: auto;
+          margin-right: auto;
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
@@ -1565,109 +1764,9 @@
 
       .OfirmiePhoto {
         position: absolute;
-        width: 488px;
-        top: 15px;
-        left: calc(50% - 488px / 2);
-        height: 520px;
-      }
-    }
-  }
-}
-
-@media (max-width: 666px) {
-  .Ofirmie {
-    width: 100%;
-    background-color: #1b5b31;
-    height: 1120px;
-    position: relative;
-
-    .custom-container {
-      max-width: 1262px;
-      height: 1120px;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: end;
-
-      .textBlock {
-        padding: 0px;
-        margin: 0px;
-        padding-top: 135px;
-        padding-left: 10px;
-        padding-right: 10px;
-
-        h6 {
-          color: var(--grey, #f5f0ec);
-          font-family: Inter;
-          font-size: 12px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 18px */
-          letter-spacing: -0.12px;
-          margin: 0;
-          margin-bottom: 16px;
-        }
-        article {
-          color: var(--grey, #f5f0ec);
-          font-family: Montserrat;
-          font-size: 48px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 115%; /* 55.2px */
-          letter-spacing: -1.44px;
-          margin-bottom: 40px;
-          text-align: center;
-
-          span {
-            color: var(--grey, #f5f0ec);
-            font-family: Inter;
-            font-size: 48px;
-            font-style: italic;
-            font-weight: 500;
-            line-height: 115%;
-          }
-        }
-
-        p {
-          color: var(--grey, #f5f0ec);
-          max-width: 500px;
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 24px */
-          letter-spacing: -0.16px;
-          margin-bottom: 72px;
-        }
-
-        button {
-          width: 196px;
-          height: 50px;
-          background: transparent;
-          display: flex;
-          padding: 12px 22px 14px 22px;
-          align-items: center;
-          gap: 8px;
-          border-radius: 200px;
-          border: 1px solid var(--grey, #f5f0ec);
-          color: var(--grey, #f5f0ec);
-          text-align: center;
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 24px */
-        }
-      }
-
-      .OfirmiePhoto {
-        position: absolute;
-        width: 488px;
-        top: 15px;
-        left: calc(50% - 488px / 2);
-        height: 520px;
+        width: 85%;
+        top: 10px;
+        left: calc(50% - 85% / 2);
       }
     }
   }
