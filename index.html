@@ -31,6 +31,9 @@
       rel="stylesheet"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- styles -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
@@ -113,6 +116,7 @@
             stroke-width="1.5"
             stroke="currentColor"
             class="w-6 h-6"
+            style="color: black"
           >
             <path
               stroke-linecap="round"
@@ -151,7 +155,11 @@
               <div class="carousel-item active">
                 <div class="slide1">
                   <div class="slide-container">
-                    <div class="rightSideContainer">
+                    <div
+                      class="rightSideContainer"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                    >
                       <h2>Nowoczesna aranżacja Twojego ogrodu</h2>
 
                       <p>
@@ -184,7 +192,11 @@
                     </div>
                   </div>
 
-                  <div class="leftSideContainer">
+                  <div
+                    class="leftSideContainer"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
                     <img
                       src="/public/images/sliderPhoto1.png"
                       alt="sliderPhoto1"
@@ -349,7 +361,7 @@
             </p>
           </div>
 
-          <div class="cardsBlock">
+          <div class="cardsBlock" data-aos="flip-left" data-aos-duration="1000">
             <div class="container text-center">
               <div class="row">
                 <div
@@ -476,9 +488,11 @@
             class="OfirmiePhoto"
             src="/public/images/OfirmiePhoto.png"
             alt="OfirmiePhoto"
+            data-aos="fade-down"
+            data-aos-duration="1000"
           />
 
-          <div class="textBlock">
+          <div class="textBlock" data-aos="fade-up" data-aos-duration="1000">
             <h6>O firmie</h6>
             <article>
               Tworzymy <br />
@@ -515,6 +529,7 @@
         </div>
       </section>
 
+      <!-- Realizacje -->
       <section class="Realizac" id="realizac">
         <div class="custom-container">
           <div class="textBlock">
@@ -553,7 +568,7 @@
       <!-- Instagram -->
       <section class="Instagram" id="instagram">
         <div class="custom-container">
-          <div class="content">
+          <div class="content" data-aos="flip-right" data-aos-duration="1000">
             <h2>
               Zostańmy w kontakcie! Znajdziesz nas na <span>Instagramie</span>.
             </h2>
@@ -626,8 +641,9 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="script.js"></script>
     <script src="fetching.js"></script>
   </body>
 </html>

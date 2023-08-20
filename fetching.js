@@ -1,3 +1,9 @@
+//if you have promblems with the fetching images - its probably becouse of the "Rate Limit Exceeded",
+//please copy and paste another client id and try again
+
+// first - 896d4f52c589547b2134bd75ed48742db637fa51810b49b607e37e46ab2c0043
+// second - s2iDMNtNY-yGTP-Q8T1X3dNDY8Dw3vzuBE6T1ia07hg
+
 const fetchImagesContainer = document.getElementById("fetchImages");
 const popup = document.getElementById("popup");
 const popupImage = document.getElementById("popupImage");
@@ -6,7 +12,7 @@ const closePopup = document.getElementById("closePopup");
 let currentCount = 10;
 async function fetchImages() {
   const response = await fetch(
-    `https://api.unsplash.com/photos/random?client_id=s2iDMNtNY-yGTP-Q8T1X3dNDY8Dw3vzuBE6T1ia07hg&count=${currentCount}`
+    `https://api.unsplash.com/photos/random?client_id=896d4f52c589547b2134bd75ed48742db637fa51810b49b607e37e46ab2c0043&count=${currentCount}`
   );
   const data = await response.json();
   return data;
