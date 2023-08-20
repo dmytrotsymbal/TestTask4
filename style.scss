@@ -250,6 +250,20 @@
             text-decoration: none;
             position: relative;
           }
+
+          .mobileDropdown {
+            border-left: 1px solid #111;
+            margin: 0;
+            padding: 0;
+            margin-left: 10px;
+            margin-bottom: 10px;
+
+            a {
+              padding: 0;
+              padding: 5px 5px;
+              font-style: italic;
+            }
+          }
         }
       }
     }

@@ -236,6 +236,18 @@
   text-decoration: none;
   position: relative;
 }
+.header nav .mobileMenu ul li .mobileDropdown {
+  border-left: 1px solid #111;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.header nav .mobileMenu ul li .mobileDropdown a {
+  padding: 0;
+  padding: 5px 5px;
+  font-style: italic;
+}
 .header .adaptiveBtn {
   display: none;
 }
